@@ -11,4 +11,6 @@ python object_detection/model_main.py \
     --sample_1_of_n_eval_examples=$SAMPLE_1_OF_N_EVAL_EXAMPLES \
     --alsologtostderr
 
-python ..\..\model_main.py --pipeline_config_path=C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\Pre-Trained-Model\.pipeline.config --model_dir=C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\Pre-Trained-Model --num_train_steps=50000 --sample_1_of_n_eval_examples=1 --alsologtostderr
+python ..\..\model_main.py --pipeline_config_path=C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\Pre-Trained-Model\pipeline.config --model_dir=C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\Pre-Trained-Model --num_train_steps=50000 --sample_1_of_n_eval_examples=1 --alsologtostderr
+
+python ..\..\model_main.py --train_dir ./log --pipeline_config_path C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\Pre-Trained-Model\pipeline.config
