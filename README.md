@@ -18,7 +18,7 @@ Your folder structure should look like
 
 generate_tf_record.py
 
-	Based on create_tf_record.py. Modified paths to generate Tensorflow records for our custom dataset.
+Based on create_tf_record.py. Modified paths to generate Tensorflow records for our custom dataset.
 	
 unzip_tar.py
   
