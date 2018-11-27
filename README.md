@@ -29,11 +29,11 @@ Your folder structure should look like
 
 - unzip_tar.py
   
-	  Unzip a .tar or .tar.gz file in current dir.
+	 Unzip a .tar or .tar.gz file in current dir.
   
 - generate_train_val.py
 
-	  Copy images and annotations specified in train.txt and val.txt into directory "train" and "val" in current dir, each contains a folder "JPEGImages" and a folder "Annotations".
+	 Copy images and annotations specified in train.txt and val.txt into directory "train" and "val" in current dir, each contains a folder "JPEGImages" and a folder "Annotations".
 
 ## Reference
   [StackOverflow: Train Tensorflow Object Detection on own dataset](https://stackoverflow.com/questions/44973184/train-tensorflow-object-detection-on-own-dataset?noredirect=1&lq=1)
