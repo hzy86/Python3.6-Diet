@@ -1,32 +1,30 @@
 # Python3.6-DietSkan
-DietSkan Object detection with Tensorflow. 11-25-2018
+DietSkan Object detection with Tensorflow. Nov 2018 - Present
 
 Database: [ECUSTFD](https://github.com/Liang-yc/ECUSTFD-resized)
 
 ## Usage
 Your folder structure should look like
 ```
-	+ Python3.6-DietSkan
-		+ ECUSTFD-resized-
-			+ Annotations
-				-- (a lot of .xml)
-			+ ImageSets
-			+ JPEGImages
-				-- (a lot of .JPG)
-		-- other stuff in this repo
++ Python3.6-DietSkan
+	+ ECUSTFD-resized-
+		+ Annotations
+			-- (a lot of .xml)
+		+ ImageSets
+		+ JPEGImages
+			-- (a lot of .JPG)
+	-- other stuff in this repo
 ```
-# Note
-	* explanations for each field are in {$EXPlANATION}
-
-# Command for generate TF Records
-python generate_tf_record.py \
+generate_tf_record.py
+  
+  Based on create_tf_record.py. Modified paths to generate Tensorflow records for our custom dataset.
+  ``` terminal
+  python generate_tf_record.py \
 	--label_map_path=./pascal_label_map.pbtxt {$Absolute path to the label_map_path.pbtxt}\
 	--data_dir=./ECUSTFD-resized- {$Absolute path to the data folder} \
 	--set==train {$A value from [train, val, trainval, test] where 'val' stands for validation} \
 	--output_path=./train.record {$Absolute or relative path of where you want to place the output}
-generate_tf_record.py
-  
-  Based on create_tf_record.py. Modified paths to generate Tensorflow records for our custom dataset.
+  ```
   
 unzip_tar.py
   
