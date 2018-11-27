@@ -19,13 +19,7 @@ generate_tf_record.py
 
 	Based on create_tf_record.py. Modified paths to generate Tensorflow records for our custom dataset.
 	
-	``` terminal
-		python generate_tf_record.py \
-		--label_map_path=./pascal_label_map.pbtxt {$Absolute path to the label_map_path.pbtxt}\
-		--data_dir=./ECUSTFD-resized- {$Absolute path to the data folder} \
-		--set==train {$A value from [train, val, trainval, test] where 'val' stands for validation} \
-		--output_path=./train.record {$Absolute or relative path of where you want to place the output}
-	```
+	
   
 unzip_tar.py
   
