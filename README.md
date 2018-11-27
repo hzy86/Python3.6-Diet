@@ -16,7 +16,8 @@ Your folder structure should look like
 		-- other stuff in this repo
 ```
 The following list explains the .py scripts. Some functions have terminal commands that you can copy and paste, but be sure to modify the values for the arguments if needed. Explanations for the arguments are provided at the top of the command in the format like
-``` attribute={$Explanation}
+``` 
+attribute={$Explanation}
 ```
 - generate_tf_record.py
 
@@ -26,6 +27,7 @@ The following list explains the .py scripts. Some functions have terminal comman
 	data_dir={$Absolute or relative path to the data folder}
 	set={$A value from [train, val, trainval, test] where 'val' stands for validation}
 	output_path={$Absolute or relative path of where you want to place the output}
+	
 	python generate_tf_record.py \
 	--label_map_path=./pascal_label_map.pbtxt \
 	--data_dir=./ECUSTFD-resized- \
