@@ -1,16 +1,18 @@
-python ..\generate_tf_record.py --label_map_path=.\pascal_label_map.pbtxt --data_dir C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\ECUSTFD-resized- --set=train --output_path=C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\train.record
+# Folder structure
+	+ Python3.6-DietSkan
+		+ ECUSTFD-resized-
+			+ Annotations
+				-- (a lot of .xml)
+			+ ImageSets
+			+ JPEGImages
+				-- (a lot of .JPG)
+		-- other stuff in this repo
+# Note
+	* explanations for each field are in {$EXPlANATION}
 
-PIPELINE_CONFIG_PATH={path to pipeline config file}
-MODEL_DIR={path to model directory}
-NUM_TRAIN_STEPS=50000
-SAMPLE_1_OF_N_EVAL_EXAMPLES=1
-python object_detection/model_main.py \
-    --pipeline_config_path=${PIPELINE_CONFIG_PATH} \
-    --model_dir=${MODEL_DIR} \
-    --num_train_steps=${NUM_TRAIN_STEPS} \
-    --sample_1_of_n_eval_examples=$SAMPLE_1_OF_N_EVAL_EXAMPLES \
-    --alsologtostderr
-
-python ..\..\model_main.py --pipeline_config_path=C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\Pre-Trained-Model\pipeline.config --model_dir=C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\Pre-Trained-Model --num_train_steps=50000 --sample_1_of_n_eval_examples=1 --alsologtostderr
-
-python ..\..\model_main.py --train_dir ./log --pipeline_config_path C:\Users\sixexy\Documents\Career\SEAL_Project\DietSkan\models\research\object_detection\dataset_tools\dietskan\Pre-Trained-Model\pipeline.config
+# Command for generate TF Records
+python generate_tf_record.py \
+	--label_map_path=./pascal_label_map.pbtxt {$Absolute path to the label_map_path.pbtxt}\
+	--data_dir=./ECUSTFD-resized- {$Absolute path to the data folder} \
+	--set==train {$A value from [train, val, trainval, test] where 'val' stands for validation} \
+	--output_path=./train.record {$Absolute or relative path of where you want to place the output}

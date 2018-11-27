@@ -2,7 +2,9 @@ ECUSTFD-resized-
 
 *.tar.gz
 
+mycommand.txt
+
+log
 Pre-Trained-Model
 
-train
-val
+model_main.py
