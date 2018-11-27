@@ -3,6 +3,7 @@ DietSkan Object detection with Tensorflow. 11-25-2018
 
 Database worked with: ECUSTFD https://github.com/Liang-yc/ECUSTFD-resized
 
+# Files Details
 generate_tf_record.py
   
   Based on create_tf_record.py. Modified paths to generate Tensorflow records for our custom dataset.
