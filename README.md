@@ -1,7 +1,7 @@
 # Python3.6-DietSkan
 DietSkan Object detection with Tensorflow. 11-25-2018
 
-Database: [ECUSTFD] https://github.com/Liang-yc/ECUSTFD-resized
+Database: [ECUSTFD](https://github.com/Liang-yc/ECUSTFD-resized)
 
 ## File Details
 generate_tf_record.py
