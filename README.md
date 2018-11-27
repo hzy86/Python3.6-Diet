@@ -15,6 +15,7 @@ Your folder structure should look like
 			-- (a lot of .JPG)
 		-- other stuff in this repo
 ```
+
 The following list explains the .py scripts. Some functions have terminal commands that you can copy and paste, but be sure to modify the values for the arguments if needed. Explanations for the arguments are provided at the top of the command in the format like
 ``` 
 attribute={$Explanation}
