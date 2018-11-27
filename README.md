@@ -16,6 +16,7 @@ Your folder structure should look like
 	-- other stuff in this repo
 ```
 generate_tf_record.py
+
 	Based on create_tf_record.py. Modified paths to generate Tensorflow records for our custom dataset.
 	``` terminal
 	python generate_tf_record.py \
