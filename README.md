@@ -14,3 +14,6 @@ unzip_tar.py
 generate_train_val.py
 
   Copy images and annotations specified in train.txt and val.txt into directory "train" and "val" in current dir, each contains a folder "JPEGImages" and a folder "Annotations".
+
+# Reference
+  https://stackoverflow.com/questions/44973184/train-tensorflow-object-detection-on-own-dataset?noredirect=1&lq=1
