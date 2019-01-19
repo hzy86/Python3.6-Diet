@@ -1,0 +1,5 @@
+https://www.inovex.de/blog/tensorflow-models-with-core-ml/
+
+https://hackernoon.com/creating-insanely-fast-image-classifiers-with-mobilenet-in-tensorflow-f030ce0a2991
+
+https://www.reza.codes/2017-07-29/how-to-train-your-own-dataset-for-coreml/
